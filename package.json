@@ -3,6 +3,7 @@
   "displayName": "python-command-parser",
   "description": "",
   "version": "0.0.1",
+  "publisher": "memory4963",
   "repository": {
     "type": "git",
     "url": "https://github.com/memory4963/vscode-python-command-parser.git"
