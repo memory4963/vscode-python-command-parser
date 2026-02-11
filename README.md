@@ -6,6 +6,27 @@ This is the README for extension "python-command-parser".
 
 This extension loads python command, and convert it into launch.json style for directly run.
 
+To use this extension, please open the `Command Palette`, and run `parse python command`.
+
+For example, the input python command is `CUDA_VISIBLE_DEVICES=1 python main.py --arg1 --arg2`, it will be converted into the style of `.vscode/launch.json`:
+
+```json
+        {
+            "name": "main.py",
+            "type": "debugpy",
+            "request": "launch",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1",
+            },
+            "program": "main.py",
+            "args": [
+                "--arg1",
+                "--arg2",
+            ],
+            "console": "integratedTerminal",
+        },
+```
+
 ## Requirements
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.

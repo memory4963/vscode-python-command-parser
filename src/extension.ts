@@ -110,7 +110,6 @@ export function activate(context: vscode.ExtensionContext) {
             // confirm whether launch.json file exists
             const cwd = vscode.workspace.workspaceFolders;
             if (cwd) {
-                // TODO: make sure remote env still works
                 const cwdPath = cwd[0].uri.fsPath;
                 const launchPath = path.join(cwdPath, '.vscode', 'launch.json');
                 if (!fs.existsSync(launchPath)) {
